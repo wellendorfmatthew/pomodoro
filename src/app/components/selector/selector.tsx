@@ -4,15 +4,16 @@ import { useState } from "react"
 import { Mode, Modes } from "../../../../types"
 
 type SelectorProps = {
-    mode: Mode
+    mode: Mode;
+    onModeChange: (newModes: Modes) => void;
 }
 
-export default function Selector({mode}: SelectorProps) {
+export default function Selector({mode, onModeChange}: SelectorProps) {
     const [currentMode, setCurrentMode] = useState<Modes>(mode.mode);
     
     const handleMode = (newMode: Modes) => {
-        mode.mode = newMode;
         setCurrentMode(newMode);
+        onModeChange(newMode);
     }
 
     return (
