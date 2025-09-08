@@ -4,22 +4,22 @@ export const modes : Mode[] = [
     {
         mode: "pomodoro",
         time: {
-            minutes: 1,
-            seconds: 2
+            minutes: 30,
+            seconds: 0
         }
     },
     {
         mode: "short break",
         time: {
-            minutes: 1,
-            seconds: 3
+            minutes: 5,
+            seconds: 0
         }
     },
     {
         mode: "long break",
         time: {
-            minutes: 1,
-            seconds: 4
+            minutes: 10,
+            seconds: 0
         }
     },
 ]
