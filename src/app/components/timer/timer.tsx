@@ -55,7 +55,7 @@ export default function Timer({mode}: TimerProps) {
     return (
         <div className="rounded-full bg-linear-to-br from-quaternary to-primary p-6 aspect-square">
             <div className="rounded-full bg-quaternary p-6 aspect-square">
-                <div className="rounded-full border-8 border-secondary flex flex-col items-center justify-center gap-8 p-6 aspect-square">
+                <div className="rounded-full border-8 border-secondary flex flex-col items-center justify-center gap-8 p-10 aspect-square">
                     <h1 className="text-8xl font-bold">{formattedTime}</h1>
                     <div className="flex items-center justify-center gap-4">
                         <button className="bg-secondary rounded-full px-2 cursor-pointer" onClick={() => setIsRunning((running) => !running)}>{isRunning ? <BiPause size={30} /> : <BiPlay size={30} />}</button>
